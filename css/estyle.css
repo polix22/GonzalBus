@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(254, 254, 254);
+    
+    font-family: 'Chela One', cursive;
+
+    margin: 5px;
+}
+p{
+    margin: 50px;
+}
+.tituloMain{
+    font-family: 'Lilita One', cursive;
+    color: black;
+    text-decoration-line: underline;
+    text-align: center;
+}
+h2{
+    color:rgb(151, 15, 8);;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+nav{
+    width: 98%;
+    height: 90px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(75, 52, 109);
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;  
+}
+nav ul a{
+    color: rgb(155, 16, 190);
+    text-decoration: none;
+    padding: 10px;
+}
+nav li a:hover{
+    background-color:rgb(155, 16, 190);
+    color: white;
+    border-radius: 10px;
+}
+
+img{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    margin:10px;
+}  
+footer{
+    background-color: rgb(46, 4, 108);
+    background-image: url(../image/viaje.jpg);
+    border-radius: 20px;
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
