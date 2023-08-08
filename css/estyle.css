@@ -4,32 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(254, 254, 254);
-    
-    font-family: 'Chela One', cursive;
-
+    background-color: white;
     margin: 5px;
 }
-p{
-    margin: 50px;
-}
-.tituloMain{
-    font-family: 'Lilita One', cursive;
-    color: black;
-    text-decoration-line: underline;
-    text-align: center;
-}
-h2{
-    color:rgb(151, 15, 8);;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
+/*navegador*/
 nav{
-    width: 98%;
     height: 90px;
-    border-radius: 10px;
-    margin: auto;
-    background-color: rgb(75, 52, 109);
+    background-image: url(../image/WhatsApp\ Image\ 2023-08-04\ at\ 17.06.08.jpeg);
+    background-size: cover;
     display: flex;
     justify-content: space-between;
 }
@@ -37,30 +19,206 @@ nav ul{
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 10px;  
-}
-nav ul a{
-    color: rgb(155, 16, 190);
-    text-decoration: none;
     padding: 10px;
 }
+nav ul a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 20px;
+}
 nav li a:hover{
-    background-color:rgb(155, 16, 190);
+    background-color:rgba(204, 5, 248, 0.301);
     color: white;
     border-radius: 10px;
+    text-decoration-line: underline;
+}
+.tituloMain{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color:  rgb(223, 15, 234);
+    text-decoration-line: none;
+    text-align: center;
+}
+/*pagina inicio
+quizas sea mucho efecto hover en las imagenes¿?*/
+.bodyinicio{
+    display:grid;
+    grid-template-rows: 500px;
+    margin: 0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    grid-template-columns: 33% 33% 33%;
+}
+.caja{
+    margin: 20px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 40px;
+    opacity: .9;
+    box-shadow: 10px 10px 10px rgba(178, 176, 176, 0.993);
+}
+.caja:hover{
+    cursor: pointer;
+    width: 500px;
+    opacity: 1;
+    margin: 5px;
+    filter: contrast(120%);
+
+}
+.texto{
+    margin-top: 20px;
+    color: rgb(223, 15, 234);
+    font-family: 'Roboto', sans-serif;
 }
 
-img{
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-    margin:10px;
-}  
+.c1{
+    background-image: url(../image/nosotros1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.c2{
+    background-image: url(../image/cordoba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.c3{
+    background-image: url(../image/nosotros2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*tengo que rediseñar el footer*/
 footer{
+    height: 90px;
+    margin-bottom: 0px;
     background-color: rgb(46, 4, 108);
-    background-image: url(../image/viaje.jpg);
-    border-radius: 20px;
-    width: 98%;
+    background-image: url(../image/WhatsApp\ Image\ 2023-08-04\ at\ 17.06.08.jpeg);
+    background-size: cover;
     margin: auto;
     text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+/*galeria de imagenes pagina inicio e index*/
+section{
+   display: flex;
+   width: 1509px;
+   height: 500px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .4s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 900px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*pagina Nosotros
+no pude poner la imagen en el lado derecho del texto aplicando grid-flexbox solo con flexbox-flexbox*/
+
+.padre{
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.hijo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(47, 42, 42);
+}
+h3{
+    height: 30px;
+    font-size: x-large;
+    color:  rgb(223, 15, 234);
+}
+.hj2{
+    border-radius: 30px;
+}
+p{
+    height: 80px;
+}
+.p2{
+    height: 50px;
+}
+/* Formulario de alquiler
+falta agregar imagenes de colectivos sobre la derecha*/
+.formu{
+    background-color: azure;
+    width: 45%;
+    border-radius: 30px;
+    display: grid;
+    margin: auto;
+    gap: 10px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr;
+    grid-template-areas:
+    "Z1 Z2"
+    "Z3 Z4"
+    "Z5 Z6"
+    "Z7 Z8"
+    "AB AB"
+    "Z9 Z9";
+}
+.b1{
+    margin: 10px;
+}
+.ab{
+    grid-area: AB;
+}
+.z1{
+    grid-area: Z1;
+}
+.z2{
+    grid-area: Z2;
+}
+.z3{
+    grid-area: Z3;
+}
+.z4{
+    grid-area: Z4;
+}
+.z5{
+    grid-area: Z5;
+}
+.z6{
+    grid-area: Z6;
+}
+.z7{
+    grid-area: Z7;
+}
+.z8{
+    grid-area: Z8;
+}
+.b1{
+    text-align: center;
+    margin: 5pxs;
+}
+.txtformu{
+    /*background-color: aqua;*/
+    width: 45%;
+    height: auto;
+    width: auto;
+    margin:auto;
+    margin-bottom: 20px;
 }
