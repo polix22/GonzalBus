@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.linearedes{
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+/*nav*/
+.contenedor1{
+    background-color: rgba(34, 34, 149, 0.865);
+    background-size: cover;
+    margin-top: 0;
+}
+.menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+nav li a:hover{
+    background-color:rgba(204, 5, 248, 0.354);
+    border-radius: 10px;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+.tituloMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color:  rgb(223, 15, 234);
+    text-align: center;
+}
+/*pagina inicio*/
+.bodyinicio{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 500px 500px 500px;
+    padding: 50px;
+    list-style-type: none;
+}
+.imageninicio{
+    width: 400px;
+    border-radius: 40px;
+    opacity: .8;
+}
+.imageninicio:hover{
+    width: 450px;
+    opacity: 1;
+}
+/*tengo que rediseñar el footer*/
+footer{
+    height: 100px;
+    background-color: rgb(21, 3, 86);
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+/*pagina Nosotros*/
+.padre{
+    width: 90% ;
+    height: 110vh;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    background-color: rgba(223, 15, 234, 0.116);
+    border-radius: 10px;
+    
+}
+.hijo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(47, 42, 42);
+}
+h2,h3{
+    height: 30px;
+    font-size: x-large;
+    color:  rgb(66, 15, 234);
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.5rem;
+    height: auto;
+}
+
+/* Formulario de alquiler
+falta agregar imagenes de colectivos sobre la derecha*/
+.formulariopadre{
+    width: 90%;
+    text-align: center;
+    
+}
+.formu{
+    background-color: azure;
+    width: 45%;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    gap: 10px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .7fr .7fr .7fr .7fr .7fr;
+    grid-template-areas:
+    "Z1 Z2"
+    "Z3 Z4"
+    "Z5 Z6"
+    "Z7 Z8"
+    "AB AB"
+    "Z9 Z9";
+}
+.b1{
+    margin: 5px;
+}
+.ab{
+    grid-area: AB;
+}
+.z1{
+    grid-area: Z1;
+}
+.z2{
+    grid-area: Z2;
+}
+.z3{
+    grid-area: Z3;
+}
+.z4{
+    grid-area: Z4;
+}
+.z5{
+    grid-area: Z5;
+}
+.z6{
+    grid-area: Z6;
+}
+.z7{
+    grid-area: Z7;
+}
+.z8{
+    grid-area: Z8;
+}
+.b1{
+    text-align: center;
+    margin: 5pxs;
+}
+.txtformu{
+    width: 45%;
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+/* pagina destinos*/
+.promos{
+    width: 90%;
+    margin:20px auto;
+    background-color: rgba(223, 15, 234, 0.116);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.promo{
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    opacity: .9;
+}
+.promo:hover{
+    opacity: 1;
+    filter: contrast(120%);
+    cursor: pointer;
+    width: 500px;
+}
+/*media queries*/
+@media (max-width: 600px){
+    .promos{
+        background-color: aqua;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+    .promo{
+        width: 400px;
+        height: auto;
+    }
+    .promo:hover{
+        opacity: 1;
+        filter: contrast(120%);
+        cursor: pointer;
+        width: 400px;
+    }
+
+   
+    .formulariopadre{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtformu{
+        width: 40%;
+        height: auto;
+        width: auto;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+    .formu{
+        background-color: rgba(25, 148, 196, 0.32);
+        width: 500px;
+        border-radius: 5px;
+        display: grid;
+        margin: auto;
+        gap: 10px 10px;
+    }
+    .txtformu{
+        width: 45%;
+        height: auto;
+        width: auto;
+        margin: auto;
+        margin-bottom: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+    .padre{
+        height: 120vh;
+        width: 100%;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hijo{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: rgb(47, 42, 42);
+        background-color: aquamarine;
+    }
+
+}

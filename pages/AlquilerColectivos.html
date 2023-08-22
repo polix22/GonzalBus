@@ -8,73 +8,151 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estyle.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="icon" href="../image/favicon.ico">
-    <title>Alquiler de colectivos</title>
+    <title>Gonzalbus/alquiler de colectivos</title>
+    <meta name="descrition" content="Gonzalbus es una empresa de turismo 100% rosarina. en esta página encontraras el formulario para alquilar los colectivos">
+<meta name="keywords" content="Gonzalbus, turismo, empresa, rosario, viaje, rosarino, encomienda, destinos, pasajero, bus, alquiler, colectivo, minibus, santa fe,">
 </head>
 <body>
     <header>
-        <nav>
-            <img class="logo" src="../image/GonzalBuzcortadp.jpg" alt="logo">
-            <ul>
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./alquilercolectivos.html">Alquiler de unidades</a></li>
-            </ul>
-        </nav>
+      <section class="linea-negra">
+        <ul class="linea-top">
+            <li>
+                <p><img class="telefono" src="../image/telefono.png" alt="logo telelfono"> 341000000 </p>
+            </li>
+            <li>
+                <p><img class="email" src="../image/mensaje.png" alt="logo email"> Gonzalbus@turismo.com </p>
+            </li>
+            <li>
+                <p><img class="direccion" src="../image/ubicacion.png" alt="logo ubicacion"> Maipu 1300 Rosario </p>
+            </li>
+            <li class="class instagram">
+                <a href="http://intagram.com"> <img src="../image/insta.png" alt="logo instagram"></a>
+            </li>
+            <li class="class facebook">
+                <a href="http://facebook.com"><img src="../image/facebookaz.png" alt="logo facebook"></a>
+            </li>
+        </ul>
+    </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid contenedor1">
+              <a class="navbar-brand logo-gonzalbus" href="../index.html"><img src="../image/logo-gonzalbus.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll menu" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item inicio">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item nosotros">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                        </a>
+                      <li class="nav-item destinos">
+                        <a class="nav-link" href="./destinos.html">Destinos</a>
+                      </li>
+                      <li class="nav-item contacto">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item alquiler">
+                        <a class="nav-link" href="./alquilercolectivos.html">Alquiler de unidades</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h1 class="tituloMain">NUESTROS UNIDADES EN ALQUILER</h1>
-        <contenedor class="formulariopadre">
-            <p class="formulariohijo txtformu">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Expedita officiis magni velit delectus accusamus sequi neque laborum accusantium iste dolor. Cupiditate explicabo alias earum vel? Nobis molestias, dignissimos perspiciatis quibusdam, unde ipsum id, ad distinctio pariatur soluta quae veniam aliquid accusamus sequi neque laborum accusantium iste dolor. Cupiditate explicabo alias earum vel? Nobis molestias, dignissimos perspiciatis quibusdam, unde ipsum id, ad distinctio pariatur soluta quae veniam aliquid.
-            </p>
-            <form class="formulariohijo formu">
-                <div class="mb-3 b1 z1">
-                    <label for="exampleInputEmail1" class="form-label b1 z1">Nombre y apellido:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="padre-alquiler">
+          <div class="formulariohijo txtformu">
+            <h2 class=" wx2 txsub">En Gonzalbus contamos con unidades, buses y micros listos para tus necesidades de movilidad.</h2>
+            
+            <div class="wx2 minibus">
+              <img src="../image/minibus.jpg" alt="minibus">
+            </div>
+            <div class="wx1 bigbus">
+              <img src="../image/bigbu3.jpg" alt=" colectivo punta  del este">
+            </div>
+            <div class=" wx2 textoalquiler">
+              <h3 class="txtalq">Colegios, clubes e instituciones educacionales:</h3>
+              <p class="txtalq">Nuestro equipo se ocupa de las necesidades de logística de para tus eventos deportivos y de educación. Traslados locales, provinciales, nacionales e internacionales.</p>
+              <h3 class="txtalq">Congresos, conferencias y exposiciones:</h3>
+              <p class="txtalq">La logística es un factor fundamental para el éxito de eventos y congresos. Encontrá en Gonzalbus un aliado para formar tu equipo de producción de eventos.</p>
+              <h3 class="txtalq">Cotizamos tu viaje:</h3>
+              <p class="txtalq">Te invitamos a completar el formulario a continuación y nuestro equipo se pondrá en  contacto para darte el mejor asesoramiento.
+              </p>
+            </div>
+          </div>
+          <form class="formulariohijo formu">
+            <div class="mb-3 b1 z1">
+                <label for="exampleInputEmail1" class="form-label b1 z1">Nombre y apellido:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 b1 z2">
+                <label for="exampleInputPassword1" class="form-label">E-mail:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 b1 z3">
+                <label for="exampleInputPassword1" class="form-label">Teléfono:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 b1 z4">
+                <label for="exampleInputPassword1" class="form-label">Institución:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escuela/Club/Particular">
+              </div>
+              <div class="mb-3 b1 z5">
+                <label for="exampleInputPassword1" class="form-label">Ciudad de origen:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 b1 z6">
+                <label for="exampleInputPassword1" class="form-label">Ciudad de destino:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 b1 z7">
+                <label for="exampleInputPassword1" class="form-label">Fecha de partida:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(dd/mm/aaaa).">
                 </div>
-                <div class="mb-3 b1 z2">
-                    <label for="exampleInputPassword1" class="form-label">E-mail:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 b1 z3">
-                  <label for="exampleInputPassword1" class="form-label">Teléfono:</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 b1 z4">
-                    <label for="exampleInputPassword1" class="form-label">Institución:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escuela/Club/Particular">
-                </div>
-                <div class="mb-3 b1 z5">
-                    <label for="exampleInputPassword1" class="form-label">Ciudad de origen:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 b1 z6">
-                    <label for="exampleInputPassword1" class="form-label">Ciudad de destino:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 b1 z7">
-                    <label for="exampleInputPassword1" class="form-label">Fecha de partida:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(dd/mm/aaaa).">
-                </div>
-                <div class="mb-3 b1 z8">
-                    <label for="exampleInputPassword1" class="form-label">Fecha de regreso:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(dd/mm/aaaa).">
-                </div>
-                <div class="mb-3 b1 ab">
-                    <label for="exampleFormControlTextarea1" class="form-label">Información extra:</label>
-                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ejemplo: Movimientos en el destino."rows="3"></textarea>
-                </div>
+              <div class="mb-3 b1 z8">
+                <label for="exampleInputPassword1" class="form-label">Fecha de regreso:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(dd/mm/aaaa).">
+              </div>
+              <div class="mb-3 b1 ab">
+                <label for="exampleFormControlTextarea1" class="form-label">Información extra:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ejemplo: Movimientos en el destino."rows="3"></textarea>
+              </div>
                  <button type="submit" class="btn btn-danger b1 z9">Enviar solicitud de presupuesto.</button>
-            </form>
-        </contenedor>
+          </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </main>
     <footer>
-        <h2>Telefono☎</h2>
-        <h2>E-mail📧</h2>
+      <ul class="hijofooter1">
+        <h4>Mapa del sitio</h4>
+        <li><a href="./nosotros.html">Institucion</a></li>
+        <li><a href="./destinos.html">Destino</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./alquilercolectivos.html">Alquiler de unidades</a></li>
+      </ul>
+      <section class="hijofooter2">
+        <li>
+          <p><img class="telefono" src="../image/telefono.png" alt="logo telelfono"> 341000000 </p>
+        </li>
+        <li>
+          <p><img class="email" src="../image/mensaje.png" alt="logo email"> Gonzalbus@turismo.com </p>
+        </li>
+        <li>
+          <p><img class="direccion" src="../image/ubicacion.png" alt="logo ubicacion"> Maipu 1300 Rosario </p>
+        </li>
+        <li class="class instagram">
+          <a href="http://intagram.com"> <img src="../image/insta.png" alt="logo instagram"></a>
+        </li>
+        <li class="class facebook">
+          <a href="http://facebook.com"><img src="../image/facebookaz.png" alt="logo facebook"></a>
+        </li>
+      </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
