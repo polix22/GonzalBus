@@ -14,36 +14,43 @@ header {
   /*nav*/ }
   header .linea-negra {
     background-color: #151315;
-    height: 40px;
-    font-weight: bold;
     font-size: medium;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0;
+    padding: 0; }
     header .linea-negra .linea-top {
-      width: auto;
       display: flex;
       flex-direction: row;
-      list-style-type: none; }
+      list-style-type: none;
+      padding: 1rem 0rem;
+      justify-content: center; }
       header .linea-negra .linea-top img {
-        width: 34px;
-        padding: 5px;
-        padding: 0;
-        margin: 5px; }
+        width: 40px; }
       header .linea-negra .linea-top p {
         color: white; }
+  header .contenedorp {
+    --bs-navbar-padding-y:0
+    
+    ; }
   header .contenedor1 {
     background-color: rgba(34, 34, 149, 0.865);
-    background-size: cover;
-    margin-top: 0;
+    margin: 0;
     display: flex;
-    flex-direction: row; }
-    header .contenedor1 .logo-gonzalbus {
-      margin-left: 20px;
-      margin-right: 300px; }
+    margin-bottom: 5px;
+    justify-content: center; }
+    header .contenedor1 .menu {
+      flex-grow: 0;
+      flex-basis: none; }
     header .contenedor1 ul {
+      max-height: auto;
+      background-color: #141516;
       padding: 10px;
       font-family: 'Roboto', sans-serif;
       font-size: x-large;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+      justify-content: flex-end; }
       header .contenedor1 ul li a {
         color: aliceblue; }
       header .contenedor1 ul li a:hover {
@@ -52,8 +59,13 @@ header {
         text-decoration-line: none;
         font-weight: bold; }
 
+main {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 .tituloMain {
   width: auto;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,59 +76,75 @@ header {
 
 /*index e inicio*/
 .p-inicio {
-  margin-left: 20px;
+  margin: auto;
+  padding: auto;
   color: purple;
   text-align: left;
-  font-size: 700; }
+  font-size: 700;
+  margin-bottom: 1rem; }
+  .p-inicio p {
+    margin-top: 2rem; }
+  .p-inicio div img {
+    display: flex;
+    margin: auto;
+    width: auto;
+    border-radius: 40px; }
 
-.bodyinicio {
+.bodyinicio ul {
   display: grid;
-  height: 80vh;
-  grid-template-columns: 500px 500px 500px;
-  padding: 50px;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  padding: 0 auto;
+  margin: 0 auto;
   list-style-type: none; }
-  .bodyinicio .imageninicio {
-    width: 400px;
+  .bodyinicio ul .imageninicio {
+    width: 100%;
     border-radius: 40px;
-    opacity: .8; }
-  .bodyinicio .imageninicio:hover {
-    width: 450px;
+    opacity: .8;
+    transition: 0.2; }
+  .bodyinicio ul .imageninicio:hover {
+    transform: scale(1.05);
     opacity: 1;
     filter: contrast(120%); }
 
 /*footer*/
 footer {
-  height: 150px;
+  margin-top: 2rem;
+  width: 100%;
   background-color: #150356;
-  text-align: center;
   color: white;
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  gap: 4rem; }
   footer .hijofooter1 {
     width: auto;
     text-align: left;
     list-style-type: none; }
     footer .hijofooter1 li {
-      list-style-type: none;
-      text-decoration-line: none; }
+      text-decoration-line: none;
+      display: flex;
+      flex-direction: row; }
     footer .hijofooter1 p {
       color: white;
       font-size: larger; }
   footer .hijofooter2 {
     width: auto;
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
     justify-content: center; }
     footer .hijofooter2 img {
       width: 34px;
-      padding: 5px;
       padding: 0;
       margin: 5px; }
     footer .hijofooter2 li {
       list-style-type: none;
       text-decoration-line: none; }
+  footer .hijofooter3 img {
+    width: 34px;
+    padding: 0;
+    margin: 5px; }
+  footer .hijofooter3 li {
+    list-style-type: none;
+    text-decoration-line: none; }
 
 /*pagina contacto*/
 .form-contacto {
@@ -125,30 +153,31 @@ footer {
 
 /*pagina Nosotros*/
 .padre {
-  width: 90%;
-  align-items: center;
-  padding: 20px;
-  margin: auto;
+  width: auto;
+  padding: 1rem  auto;
+  margin: 1rem  auto;
+  margin-left: 1rem;
   display: flex;
-  flex-direction: row;
-  border-radius: 10px; }
+  flex-direction: row; }
   .padre .hijo {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    width: 90%;
-    height: 100vh;
+    margin: 1rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     color: #2f2a2a; }
   .padre h2, .padre h3 {
-    height: 30px;
     font-size: x-large;
     color: #420fea;
     font-weight: bold; }
   .padre p {
-    font-size: 1.5rem;
-    height: auto;
-    margin-right: 20px; }
+    font-size: 1.5rem; }
+  .padre div img {
+    width: 1fr;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: auto;
+    display: flex; }
 
 /*pagina alquiler*/
 .padre-alquiler {
@@ -162,7 +191,7 @@ footer {
     border-radius: 10px;
     display: grid;
     margin: auto;
-    gap: 10px 10px;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .7fr .7fr .7fr .7fr .7fr;
     grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB"; }
@@ -199,8 +228,6 @@ footer {
     grid-area: "h2 h2" "textoalquiler minibus" "textoalquiler bigbus";
     grid-template-rows: auto auto auto;
     grid-template-columns: 50% 50%; }
-  .padre-alquiler .wx2 {
-    margin: auto; }
   .padre-alquiler h2 {
     font-size: 500;
     margin: auto;
@@ -249,24 +276,11 @@ footer {
 
 /*media queries*/
 @media (max-width: 800px) {
-  .bodyinicio {
+  .bodyinicio ul {
     display: grid;
-    width: auto;
-    height: auto;
-    text-align: center;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 350px;
-    padding: auto;
-    list-style-type: none; }
-    .bodyinicio .imageninicio {
-      width: 310px;
-      padding: auto;
-      border-radius: 40px;
-      opacity: .8; }
-    .bodyinicio .imageninicio:hover {
-      width: 350px;
-      opacity: 1;
-      filter: contrast(120%); }
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem; }
   /* pagina destino*/
   .promos {
     display: grid;
@@ -285,16 +299,12 @@ footer {
         filter: contrast(120%); }
   /*pagina nosotros*/
   .padre {
-    width: 90%;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
+    padding: 0  auto;
+    margin: 0  auto;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px; }
-    .padre .img-nos {
-      width: 600px;
-      height: auto; }
+    flex-direction: column; }
+    .padre div img {
+      max-width: 600px; }
   /*pagina alquiler*/
   .padre-alquiler .formu {
     background-color: rgba(128, 128, 128, 0.744);
@@ -312,58 +322,33 @@ footer {
     width: 90%;
     display: grid;
     grid-template-columns: 700px;
-    grid-template-rows: auto auto auto auto auto; }
-  /*footer*/
-  footer {
-    height: auto;
-    background-color: #150356;
-    text-align: center;
-    color: white;
-    grid-template-columns: auto; }
-    footer .hijofooter2 {
-      width: auto;
-      text-align: right;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      justify-content: center; }
-      footer .hijofooter2 img {
-        width: 34px;
-        padding: 5px;
-        padding: 0;
-        margin: 5px; }
-      footer .hijofooter2 li {
-        list-style-type: none;
-        text-decoration-line: none; }
-    footer .hijofooter1 {
-      width: auto;
-      text-align: left;
-      list-style-type: none; }
-      footer .hijofooter1 li {
-        list-style-type: none;
-        text-decoration-line: none; }
-      footer .hijofooter1 p {
-        color: white;
-        font-size: larger; } }
+    grid-template-rows: auto auto auto auto auto; } }
+
+@media (max-width: 700px) {
+  .p-inicio div img {
+    display: none; } }
 
 @media (max-width: 600px) {
-  .bodyinicio {
+  .linea-negra {
+    display: none; }
+  .bodyinicio ul {
     display: grid;
-    height: auto;
-    grid-template-columns: 500px;
-    grid-template-rows: 500px 500px 500px;
-    gap: 10px;
-    padding: auto;
-    list-style-type: none; }
-    .bodyinicio .imageninicio {
-      width: 500px;
-      padding: auto;
-      border-radius: 40px;
-      opacity: .8; }
-    .bodyinicio .imageninicio:hover {
-      width: 500px;
-      opacity: 1;
-      filter: contrast(120%); }
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 2rem; }
+  /*footer*/
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #150356;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    place-content: center;
+    gap: 4rem; }
+    footer .hijofooter3 {
+      display: flex; }
   /*pagina destino*/
   .promos {
     display: grid;
@@ -378,29 +363,12 @@ footer {
         cursor: pointer; }
   /*pagina nosotros*/
   .padre {
-    width: 90%;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
+    padding: 0  auto;
+    margin: 0  auto;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px; }
-    .padre .hijo {
-      font-weight: 900;
-      width: 90%;
-      height: 120vh;
-      display: flex;
-      flex-direction: column; }
-    .padre h2, .padre h3 {
-      height: 30px;
-      font-size: x-large; }
-    .padre p {
-      font-size: 1.5rem;
-      height: auto;
-      margin-right: 20px; }
-    .padre .img-nos {
-      width: 500px;
-      height: auto; }
+    flex-direction: column; }
+    .padre div img {
+      display: none; }
   /*pagina alquiler*/
   .padre-alquiler .formu {
     background-color: rgba(128, 128, 128, 0.744);

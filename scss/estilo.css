@@ -1,0 +1,497 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 247, 245);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto auto;
+  /*nav*/
+}
+header aside.linea-negra {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(121, 70, 121);
+  font-size: medium;
+  font-weight: bold;
+  justify-content: center;
+}
+header aside.linea-negra .linea-top {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+header aside.linea-negra .linea-top p {
+  color: white;
+}
+header .contenedor1 {
+  background-color: rgba(34, 34, 149, 0.865);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+header .contenedor1 .logo-gonzalbus {
+  margin-left: 20px;
+  margin-right: 300px;
+}
+header .contenedor1 ul {
+  padding: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+header .contenedor1 ul li a {
+  color: aliceblue;
+}
+header .contenedor1 ul li a:hover {
+  background-color: rgba(204, 5, 248, 0.354);
+  border-radius: 10px;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+.tituloMain {
+  width: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  background-color: rgb(223, 15, 234);
+  color: white;
+  text-align: center;
+}
+
+/*index e inicio*/
+.p-inicio {
+  margin-left: 20px;
+  color: purple;
+  text-align: left;
+  font-size: 700;
+}
+
+.bodyinicio {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 500px 500px 500px;
+  padding: 50px;
+  list-style-type: none;
+}
+.bodyinicio .imageninicio {
+  width: 400px;
+  border-radius: 40px;
+  opacity: 0.8;
+}
+.bodyinicio .imageninicio:hover {
+  width: 450px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*footer*/
+footer {
+  height: 150px;
+  background-color: rgb(21, 3, 86);
+  text-align: center;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: fixed;
+  bottom: 0;
+}
+footer .hijofooter1 {
+  width: auto;
+  text-align: left;
+  list-style-type: none;
+}
+footer .hijofooter1 li {
+  text-decoration-line: none;
+}
+footer .hijofooter1 p {
+  color: white;
+  font-size: larger;
+}
+footer .hijofooter2 {
+  width: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+}
+footer .hijofooter2 img {
+  width: 34px;
+  padding: 0;
+  margin: 5px;
+}
+footer .hijofooter2 li {
+  list-style-type: none;
+  text-decoration-line: none;
+}
+
+/*pagina contacto*/
+.form-contacto {
+  width: 80%;
+  margin: auto;
+}
+
+/*pagina Nosotros*/
+.padre {
+  width: 90%;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.padre .hijo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(47, 42, 42);
+}
+.padre h2, .padre h3 {
+  font-size: x-large;
+  color: rgb(66, 15, 234);
+  font-weight: bold;
+}
+.padre p {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+/*pagina alquiler*/
+.padre-alquiler {
+  width: 90%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.padre-alquiler .formu {
+  background-color: rgba(215, 211, 211, 0.55);
+  width: 700px;
+  border-radius: 10px;
+  display: grid;
+  margin: auto;
+  gap: 10px 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+  grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB";
+}
+.padre-alquiler .formu .b1 {
+  margin: 5px;
+}
+.padre-alquiler .formu .ab {
+  grid-area: AB;
+}
+.padre-alquiler .formu .z1 {
+  grid-area: Z1;
+}
+.padre-alquiler .formu .z2 {
+  grid-area: Z2;
+}
+.padre-alquiler .formu .z3 {
+  grid-area: Z3;
+}
+.padre-alquiler .formu .z4 {
+  grid-area: Z4;
+}
+.padre-alquiler .formu .z5 {
+  grid-area: Z5;
+}
+.padre-alquiler .formu .z6 {
+  grid-area: Z6;
+}
+.padre-alquiler .formu .z7 {
+  grid-area: Z7;
+}
+.padre-alquiler .formu .z8 {
+  grid-area: Z8;
+}
+.padre-alquiler .formu .b1 {
+  text-align: center;
+  margin: 5pxs;
+}
+.padre-alquiler .txtformu {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  width: 90%;
+  font-weight: 900;
+  display: grid;
+  grid-area: "h2 h2" "textoalquiler minibus" "textoalquiler bigbus";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 50% 50%;
+}
+.padre-alquiler h2 {
+  font-size: 500;
+  margin: auto;
+  font-weight: bold;
+  grid-area: "h2";
+}
+.padre-alquiler .textoalquiler {
+  margin: auto;
+  grid-area: "textoalquiler";
+}
+.padre-alquiler .minibus {
+  margin: auto;
+  grid-area: "minibus";
+}
+.padre-alquiler .minibus img {
+  border-radius: 20px;
+}
+.padre-alquiler .bigbus {
+  margin: auto;
+  grid-area: "bigbus";
+}
+.padre-alquiler .bigbus img {
+  border-radius: 20px;
+}
+.padre-alquiler h3 {
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+  color: blue;
+}
+.padre-alquiler p {
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* pagina destinos*/
+.promos {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+.promos .promo {
+  width: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.promos .promo:hover {
+  opacity: 1;
+  filter: contrast(120%);
+  cursor: pointer;
+}
+
+/*media queries*/
+@media (max-width: 800px) {
+  .bodyinicio {
+    display: grid;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px;
+    padding: auto;
+    list-style-type: none;
+  }
+  .bodyinicio .imageninicio {
+    width: 310px;
+    padding: auto;
+    border-radius: 40px;
+    opacity: 0.8;
+  }
+  .bodyinicio .imageninicio:hover {
+    width: 350px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /* pagina destino*/
+  .promos {
+    display: grid;
+    width: auto;
+    height: auto;
+    text-align: center;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+  .promos .promo {
+    width: 310px;
+    padding: auto;
+    border-radius: 40px;
+    opacity: 0.8;
+  }
+  .promos .promo .promo:hover {
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /*pagina nosotros*/
+  .padre {
+    width: 90%;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .padre .img-nos {
+    width: 600px;
+    height: auto;
+  }
+  /*pagina alquiler*/
+  .padre-alquiler .formu {
+    background-color: rgba(128, 128, 128, 0.744);
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    gap: 10px 10px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB";
+  }
+  .padre-alquiler .txtformu {
+    margin: auto;
+    padding: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  /*footer*/
+  footer {
+    height: auto;
+    background-color: rgb(21, 3, 86);
+    text-align: center;
+    color: white;
+    grid-template-columns: auto;
+  }
+  footer .hijofooter2 {
+    width: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+  }
+  footer .hijofooter2 img {
+    width: 34px;
+    padding: 5px;
+    padding: 0;
+    margin: 5px;
+  }
+  footer .hijofooter2 li {
+    list-style-type: none;
+    text-decoration-line: none;
+  }
+  footer .hijofooter1 {
+    width: auto;
+    text-align: left;
+    list-style-type: none;
+  }
+  footer .hijofooter1 li {
+    list-style-type: none;
+    text-decoration-line: none;
+  }
+  footer .hijofooter1 p {
+    color: white;
+    font-size: larger;
+  }
+}
+@media (max-width: 600px) {
+  .bodyinicio {
+    display: grid;
+    height: auto;
+    grid-template-columns: 500px;
+    grid-template-rows: 500px 500px 500px;
+    gap: 10px;
+    padding: auto;
+    list-style-type: none;
+  }
+  .bodyinicio .imageninicio {
+    width: 500px;
+    padding: auto;
+    border-radius: 40px;
+    opacity: 0.8;
+  }
+  .bodyinicio .imageninicio:hover {
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /*pagina destino*/
+  .promos {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+  .promos .promo {
+    width: 500px;
+    height: auto;
+  }
+  .promos .promo .promo:hover {
+    width: 500px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  /*pagina nosotros*/
+  .padre {
+    width: 90%;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .padre .hijo {
+    font-weight: 900;
+    width: 90%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .padre h2, .padre h3 {
+    height: 30px;
+    font-size: x-large;
+  }
+  .padre p {
+    font-size: 1.5rem;
+    height: auto;
+    margin-right: 20px;
+  }
+  .padre .img-nos {
+    width: 500px;
+    height: auto;
+  }
+  /*pagina alquiler*/
+  .padre-alquiler .formu {
+    background-color: rgba(128, 128, 128, 0.744);
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    gap: 10px 10px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB";
+  }
+  .padre-alquiler .txtformu {
+    margin: auto;
+    padding: auto;
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 500px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
