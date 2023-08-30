@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f8f7f5;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: bold; }
 
@@ -17,20 +17,21 @@ header {
     font-size: medium;
     font-weight: bold;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    height: 3rem; }
     header .linea-negra .linea-top {
+      margin-right: 1rem;
       display: flex;
       flex-direction: row;
       list-style-type: none;
       padding: 1rem 0rem;
-      justify-content: center; }
+      justify-content: flex-end; }
       header .linea-negra .linea-top img {
-        width: 40px; }
+        width: 30px; }
       header .linea-negra .linea-top p {
         color: white; }
   header .contenedorp {
     --bs-navbar-padding-y:0
-    
     ; }
   header .contenedor1 {
     background-color: rgba(34, 34, 149, 0.865);
@@ -38,24 +39,20 @@ header {
     display: flex;
     margin-bottom: 5px;
     justify-content: center; }
-    header .contenedor1 .menu {
-      flex-grow: 0;
-      flex-basis: none; }
+    header .contenedor1 img {
+      width: 340px; }
     header .contenedor1 ul {
-      max-height: auto;
-      background-color: #141516;
       padding: 10px;
       font-family: 'Roboto', sans-serif;
       font-size: x-large;
       font-weight: bold;
       margin-top: 0;
       margin-bottom: 0;
-      justify-content: flex-end; }
+      text-align: end; }
       header .contenedor1 ul li a {
         color: aliceblue; }
       header .contenedor1 ul li a:hover {
-        background-color: rgba(204, 5, 248, 0.354);
-        border-radius: 10px;
+        color: #df0fea;
         text-decoration-line: none;
         font-weight: bold; }
 
@@ -64,11 +61,8 @@ main {
   margin: 0 auto; }
 
 .tituloMain {
-  width: auto;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
   font-weight: 900;
   background-color: #df0fea;
   color: white;
@@ -76,16 +70,15 @@ main {
 
 /*index e inicio*/
 .p-inicio {
-  margin: auto;
-  padding: auto;
+  margin-top: 1rem;
+  padding: 0 auto;
   color: purple;
   text-align: left;
   font-size: 700;
-  margin-bottom: 1rem; }
-  .p-inicio p {
-    margin-top: 2rem; }
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row; }
   .p-inicio div img {
-    display: flex;
     margin: auto;
     width: auto;
     border-radius: 40px; }
@@ -147,9 +140,35 @@ footer {
     text-decoration-line: none; }
 
 /*pagina contacto*/
+.h2contacto {
+  text-align: center; }
+
+.barra-iconos {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-evenly; }
+  .barra-iconos .cont-caja {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center; }
+  .barra-iconos img {
+    margin: 0 auto;
+    width: 50px; }
+
+.mapacontacto {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem; }
+  .mapacontacto iframe {
+    width: 100%; }
+
 .form-contacto {
-  width: 80%;
-  margin: auto; }
+  width: 60%;
+  margin: 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 /*pagina Nosotros*/
 .padre {
@@ -173,7 +192,7 @@ footer {
   .padre p {
     font-size: 1.5rem; }
   .padre div img {
-    width: 1fr;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 1rem;
     width: auto;
@@ -181,12 +200,12 @@ footer {
 
 /*pagina alquiler*/
 .padre-alquiler {
-  width: 90%;
+  width: 100%;
   text-align: center;
   display: grid;
   grid-template-rows: auto auto; }
   .padre-alquiler .formu {
-    background-color: rgba(215, 211, 211, 0.55);
+    background-color: white;
     width: 700px;
     border-radius: 10px;
     display: grid;
@@ -219,15 +238,17 @@ footer {
       text-align: center;
       margin: 5pxs; }
   .padre-alquiler .txtformu {
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
-    width: 90%;
+    width: auto;
     font-weight: 900;
     display: grid;
     grid-area: "h2 h2" "textoalquiler minibus" "textoalquiler bigbus";
     grid-template-rows: auto auto auto;
-    grid-template-columns: 50% 50%; }
+    grid-template-columns: auto auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   .padre-alquiler h2 {
     font-size: 500;
     margin: auto;
@@ -247,7 +268,7 @@ footer {
     .padre-alquiler .bigbus img {
       border-radius: 20px; }
   .padre-alquiler h3 {
-    margin: 10px;
+    margin: 0 auto;
     font-weight: bold;
     text-align: left;
     color: blue; }
@@ -258,24 +279,31 @@ footer {
 
 /* pagina destinos*/
 .promos {
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 10px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto; }
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 1rem;
+  max-width: 1600; }
   .promos .promo {
-    width: 400px;
-    margin: 20px;
+    width: 100%;
+    margin: 0 auto;
     border-radius: 20px;
     opacity: .9; }
   .promos .promo:hover {
     opacity: 1;
-    filter: contrast(120%);
-    cursor: pointer; }
+    filter: contrast(120%); }
 
 /*media queries*/
+@media (max-width: 900px) {
+  /*pagina inicio e index*/
+  .p-inicio {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }
+
 @media (max-width: 800px) {
+  /*pagina inicio e index*/
   .bodyinicio ul {
     display: grid;
     grid-template-columns: auto auto;
@@ -284,16 +312,13 @@ footer {
   /* pagina destino*/
   .promos {
     display: grid;
-    width: auto;
-    height: auto;
     text-align: center;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto auto auto; }
     .promos .promo {
-      width: 310px;
-      padding: auto;
+      margin: 0 auto;
       border-radius: 40px;
-      opacity: .8; }
+      opacity: .9; }
       .promos .promo .promo:hover {
         opacity: 1;
         filter: contrast(120%); }
@@ -307,7 +332,7 @@ footer {
       max-width: 600px; }
   /*pagina alquiler*/
   .padre-alquiler .formu {
-    background-color: rgba(128, 128, 128, 0.744);
+    background-color: white;
     width: 500px;
     border-radius: 10px;
     display: grid;
@@ -318,10 +343,9 @@ footer {
     grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB"; }
   .padre-alquiler .txtformu {
     margin: auto;
-    padding: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: 700px;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto; } }
 
 @media (max-width: 700px) {
@@ -349,18 +373,22 @@ footer {
     gap: 4rem; }
     footer .hijofooter3 {
       display: flex; }
+  /*pagina contacto*/
+  .barra-iconos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
   /*pagina destino*/
   .promos {
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto; }
     .promos .promo {
-      width: 500px;
-      height: auto; }
+      margin: 0 auto;
+      margin-top: 1rem;
+      opacity: .9; }
       .promos .promo .promo:hover {
-        width: 500px;
-        opacity: 1;
-        cursor: pointer; }
+        opacity: 1; }
   /*pagina nosotros*/
   .padre {
     padding: 0  auto;
@@ -371,8 +399,8 @@ footer {
       display: none; }
   /*pagina alquiler*/
   .padre-alquiler .formu {
-    background-color: rgba(128, 128, 128, 0.744);
-    width: 500px;
+    background-color: white;
+    width: auto;
     border-radius: 10px;
     display: grid;
     margin: auto;
@@ -381,9 +409,8 @@ footer {
     grid-template-rows: .7fr .7fr .7fr .7fr .7fr;
     grid-template-areas: "Z1 Z2" "Z3 Z4" "Z5 Z6" "Z7 Z8" "AB AB"; }
   .padre-alquiler .txtformu {
-    margin: auto;
-    padding: auto;
+    margin: 0 auto;
     width: 90%;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 500px; } }
+    grid-template-columns: auto; } }
